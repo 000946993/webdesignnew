@@ -1,0 +1,179 @@
+/* Enhanced CSS with Animations, Media Queries, and High-Quality Design */
+
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #F5F1ED, #DAD2BC); /* Isabelline to Bone */
+    color: #252323; /* Raisin Black */
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+}
+
+/* Header */
+header {
+    background: #70798C; /* Slate Gray */
+    color: #F5F1ED; /* Isabelline */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Navigation */
+nav ul {
+    padding: 0;
+    margin: 20px 0 0 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #F5F1ED; /* Isabelline */
+    padding: 10px 20px;
+    background: #252323; /* Raisin Black */
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #A99985; /* Khaki */
+    transform: scale(1.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav ul li a.active {
+    background-color: #A99985; /* Khaki */
+    color: #F5F1ED; /* Isabelline */
+    cursor: default;
+}
+
+/* Main Content */
+main {
+    padding: 40px 20px;
+    background: #F5F1ED; /* Isabelline */
+    max-width: 1200px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1.5s ease-in-out;
+}
+
+/* Typography */
+h2 {
+    color: #252323; /* Raisin Black */
+    border-bottom: 2px solid #A99985; /* Khaki */
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #F5F1ED; /* Isabelline */
+}
+
+table th, table td {
+    padding: 12px 15px;
+    border: 1px solid #DAD2BC; /* Bone */
+    text-align: left;
+}
+
+table th {
+    background-color: #70798C; /* Slate Gray */
+    color: #F5F1ED; /* Isabelline */
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #DAD2BC; /* Bone */
+}
+
+table tr:nth-child(odd) {
+    background-color: #F5F1ED; /* Isabelline */
+}
+
+/* Footer */
+footer {
+    background: #252323; /* Raisin Black */
+    color: #F5F1ED; /* Isabelline */
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Image Styles */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    table th, table td {
+        font-size: 0.9em;
+    }
+}
