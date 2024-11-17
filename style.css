@@ -2,7 +2,7 @@
 
 /* Global Styles */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Verdana', sans-serif;
     background: linear-gradient(to bottom, #F5F1ED, #DAD2BC); /* Isabelline to Bone */
     color: #252323; /* Raisin Black */
     margin: 0;
@@ -31,11 +31,11 @@ header h1 {
 /* Navigation */
 nav ul {
     padding: 0;
-    margin: 20px 0 0 0;
-    list-style: none;
+    margin: 0;
+    list-style-type: none;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
 }
 
 nav ul li a {
@@ -132,48 +132,67 @@ img {
 img:hover {
     transform: scale(1.05);
 }
-
-/* Animations */
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+.morning-greet {
+    background-color: #f9f6dc;
+    color: #555;
+}
+.afternoon-greet {
+    background-color: #ffe8c9;
+    color: #333;
 }
 
-@keyframes slideIn {
-    0% {
-        transform: translateY(50px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
+.evening-greet {
+    background-color: #394867;
+    color: #e7e7e7;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    header h1 {
-        font-size: 2em;
-    }
-
-    main {
-        padding: 20px;
-    }
-
-    h2 {
-        font-size: 1.8em;
-    }
-
-    table th, table td {
-        font-size: 0.9em;
-    }
+button:hover {
+    background-color: #817f80;
+    color: #fff;
+    cursor: pointer;
 }
+    /* Animations */
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideIn {
+        0% {
+            transform: translateY(50px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        nav ul {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        header h1 {
+            font-size: 2em;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h2 {
+            font-size: 1.8em;
+        }
+
+        table th, table td {
+            font-size: 0.9em;
+        }
+    }
